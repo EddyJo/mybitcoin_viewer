@@ -4,6 +4,6 @@ import kr.co.bitcoinviewer.model.ResultVO;
 import kr.co.bitcoinviewer.model.tx.CommonTxVO;
 
 public interface IBitcoinService {
-	public ResultVO summaryMyTx(int hash);
-	public CommonTxVO getInOutTx(int hash, String type);
+	public ResultVO summaryMyTx(String hash);
+	public CommonTxVO getInOutTx(String hash, String type);
 }

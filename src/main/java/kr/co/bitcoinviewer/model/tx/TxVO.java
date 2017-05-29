@@ -3,15 +3,15 @@ package kr.co.bitcoinviewer.model.tx;
 import java.util.ArrayList;
 
 public class TxVO {
-	private int hash;
+	private String hash;
 	private int size;
 	private ArrayList<CommonTxVO> inputs;
 	private ArrayList<CommonTxVO> out;
 	
-	public int getHash() {
+	public String getHash() {
 		return hash;
 	}
-	public void setHash(int hash) {
+	public void setHash(String hash) {
 		this.hash = hash;
 	}
 	public int getSize() {

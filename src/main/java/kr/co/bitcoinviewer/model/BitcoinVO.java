@@ -5,14 +5,14 @@ import java.util.ArrayList;
 import kr.co.bitcoinviewer.model.tx.TxVO;
 
 public class BitcoinVO {
-	private int hash;
+	private String hash;
 	private int nTx;
 	private ArrayList<TxVO> tx;
 	
-	public int getHash() {
+	public String getHash() {
 		return hash;
 	}
-	public void setHash(int hash) {
+	public void setHash(String hash) {
 		this.hash = hash;
 	}
 	public int getnTx() {

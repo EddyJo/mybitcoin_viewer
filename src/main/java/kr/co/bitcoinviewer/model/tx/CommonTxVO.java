@@ -1,19 +1,19 @@
 package kr.co.bitcoinviewer.model.tx;
 
 public class CommonTxVO {
-	private int hash;
-	private int value;
+	private String hash;
+	private String value;
 	
-	public int getHash() {
+	public String getHash() {
 		return hash;
 	}
-	public void setHash(int hash) {
+	public void setHash(String hash) {
 		this.hash = hash;
 	}
-	public int getValue() {
+	public String getValue() {
 		return value;
 	}
-	public void setValue(int value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 	
