@@ -28,7 +28,7 @@ public class BitcoinSearch implements IBitcoinSearch {
 		try {
 			CloseableHttpResponse httpResponse = httpClient.execute(request);
 			String json = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
-			
+
 			Gson gson = new Gson();
 			BitcoinVO bit = gson.fromJson(json, BitcoinVO.class);
 			
