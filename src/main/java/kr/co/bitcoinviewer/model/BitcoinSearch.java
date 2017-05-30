@@ -9,11 +9,13 @@ import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
 import org.apache.http.util.EntityUtils;
+import org.springframework.stereotype.Repository;
 
 import com.google.gson.Gson;
 
 import kr.co.bitcoinviewer.model.tx.TxVO;
 
+@Repository
 public class BitcoinSearch implements IBitcoinSearch {
 
 	public BitcoinVO getBitcoin(String hash) {
@@ -32,6 +34,7 @@ public class BitcoinSearch implements IBitcoinSearch {
 			Gson gson = new Gson();
 			BitcoinVO bit = gson.fromJson(json, BitcoinVO.class);
 			
+			System.out.println("조회");
 			return bit;
 			
 		} catch (ClientProtocolException e) {
@@ -45,7 +48,6 @@ public class BitcoinSearch implements IBitcoinSearch {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
 		return null;
 	}
 

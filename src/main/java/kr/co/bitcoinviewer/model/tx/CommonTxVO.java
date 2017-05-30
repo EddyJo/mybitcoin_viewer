@@ -1,20 +1,15 @@
 package kr.co.bitcoinviewer.model.tx;
 
 public class CommonTxVO {
-	private String hash;
-	private String value;
 	
-	public String getHash() {
-		return hash;
+	private String script;
+
+	public String getScript() {
+		return script;
 	}
-	public void setHash(String hash) {
-		this.hash = hash;
-	}
-	public String getValue() {
-		return value;
-	}
-	public void setValue(String value) {
-		this.value = value;
+
+	public void setScript(String script) {
+		this.script = script;
 	}
 	
 	

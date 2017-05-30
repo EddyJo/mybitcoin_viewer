@@ -1,5 +1,8 @@
 package kr.co.bitcoinviewer.web;
 
+import org.springframework.stereotype.Controller;
+
+@Controller
 public class BitcoinContoller implements IBitcoinController {
 
 	public String getMyBitcoin(String hash) {

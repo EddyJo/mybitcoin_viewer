@@ -1,16 +1,16 @@
 package kr.co.bitcoinviewer.model;
 
 public class ResultVO {
-	private int hash;
+	private String hash;
 	private int nTx;
 	private int avgTxVal;
 	private int avgTxFee;
 	private int avgTxSize;
 	
-	public int getHash() {
+	public String getHash() {
 		return hash;
 	}
-	public void setHash(int hash) {
+	public void setHash(String hash) {
 		this.hash = hash;
 	}
 	public int getnTx() {
