@@ -27,13 +27,12 @@ public class BitcoinSearch implements IBitcoinSearch {
 		
 		try {
 			CloseableHttpResponse httpResponse = httpClient.execute(request);
-			System.out.println(httpResponse.getStatusLine().getStatusCode());
 			String json = EntityUtils.toString(httpResponse.getEntity(), "UTF-8");
 			
 			Gson gson = new Gson();
 			BitcoinVO bit = gson.fromJson(json, BitcoinVO.class);
 			
-			System.out.println(bit.getnTx());
+			return bit;
 			
 		} catch (ClientProtocolException e) {
 			e.printStackTrace();
@@ -46,11 +45,6 @@ public class BitcoinSearch implements IBitcoinSearch {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-		
-		
-		
-		
-		
 		
 		return null;
 	}

@@ -6,7 +6,7 @@ import kr.co.bitcoinviewer.model.tx.TxVO;
 
 public class BitcoinVO {
 	private String hash;
-	private int nTx;
+	private int n_tx;
 	private ArrayList<TxVO> tx;
 	
 	public String getHash() {
@@ -15,11 +15,11 @@ public class BitcoinVO {
 	public void setHash(String hash) {
 		this.hash = hash;
 	}
-	public int getnTx() {
-		return nTx;
+	public int getN_tx() {
+		return n_tx;
 	}
-	public void setnTx(int nTx) {
-		this.nTx = nTx;
+	public void setN_Tx(int n_tx) {
+		this.n_tx = n_tx;
 	}
 	public ArrayList<TxVO> getTx() {
 		return tx;
