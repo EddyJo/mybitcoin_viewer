@@ -15,6 +15,12 @@ public class BitcoinContoller implements IBitcoinController {
 	@Autowired
 	BitcoinService service;
 	
+	@RequestMapping(value = "search.do",  method=RequestMethod.GET)
+	public String getMyBitcoin(Model model) {
+		
+		return "redirect:/";
+	}
+	
 	@RequestMapping(value = "search.do",  method=RequestMethod.POST)
 	public String getMyBitcoin(@RequestParam(value="hash", required=true) 
 								String hash, Model model) {

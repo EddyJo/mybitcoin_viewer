@@ -123,6 +123,34 @@
             </div>
         </div>
         
+        <!-- /.about section -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                
+               		<!-- /.intro image -->
+                    <div class="col-md-6 intro-pic wow slideInLeft">
+                        <img src="images/aboutbitcoin.jpg" alt="image" class="img-responsive">
+                    </div>	
+                    <!-- /.intro content -->
+                    <div class="col-md-6 wow slideInRight">
+                        <br>
+                        <h1> </h1>
+                        <h2>About Bitcoin</h2>
+                        <p>비트코인은 2009년 나카모토 사토시가 만든 디지털 통화로, 통화를 발행하고 관리하는 
+                        	중앙 장치가 존재하지 않는 구조를 가지고 있다. 대신, 비트코인의 거래는 P2P 기반 
+                        	분산 데이터베이스에 의해 이루어지며, 공개 키 암호 방식 기반으로 거래를 수행한다. 
+                        	비트코인은 공개성을 가지고 있다. 비트코인은 지갑 파일의 형태로 저장되며, 
+                        	이 지갑에는 각각의 고유 주소가 부여되며, 
+                        	그 주소를 기반으로 비트코인의 거래가 이루어진다. 
+                        	비트코인은 1998년 웨이따이가 사이버펑크 메일링 리스트에 올린 
+                        	암호통화란 구상을 최초로 구현한 것 중의 하나이다.
+                        </p>
+                    </div>
+                </div>			  
+            </div>
+        </div>
+        
 	<!-- /.javascript files -->
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.min.js"></script>
