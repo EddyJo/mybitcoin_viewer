@@ -8,8 +8,7 @@ public class main {
 	public static void main(String[] args) {
 		IBitcoinSearch searcher = new BitcoinSearch();
 		
-		BitcoinVO bit = searcher.getBitcoin("0000000000000bae09a7a393a8acded"
-				+ "75aa67e46cb81f7acaa5ad94f9eacd103");
+		BitcoinVO bit = searcher.getBitcoin("0000000000000bae09a7a393a8acded75aa67e46cb81f7acaa5ad94f9eacd103");
 		
 		int count = 0;
 		

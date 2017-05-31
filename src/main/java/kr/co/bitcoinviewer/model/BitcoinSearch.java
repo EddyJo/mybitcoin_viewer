@@ -33,8 +33,7 @@ public class BitcoinSearch implements IBitcoinSearch {
 
 			Gson gson = new Gson();
 			BitcoinVO bit = gson.fromJson(json, BitcoinVO.class);
-			
-			System.out.println("조회");
+
 			return bit;
 			
 		} catch (ClientProtocolException e) {

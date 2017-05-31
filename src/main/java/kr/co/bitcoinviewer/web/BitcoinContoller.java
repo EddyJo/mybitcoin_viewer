@@ -15,7 +15,7 @@ public class BitcoinContoller implements IBitcoinController {
 	@Autowired
 	BitcoinService service;
 	
-	@RequestMapping(value = "search",  method=RequestMethod.POST)
+	@RequestMapping(value = "search.do",  method=RequestMethod.POST)
 	public String getMyBitcoin(@RequestParam(value="hash", required=true) 
 								String hash, Model model) {
 		
