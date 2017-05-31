@@ -2,7 +2,7 @@ package kr.co.bitcoinviewer.model.tx;
 
 public class OutTxVO extends CommonTxVO {
 	private String hash;
-	private int value;
+	private String value;
 	
 	public String getHash() {
 		return hash;
@@ -10,10 +10,10 @@ public class OutTxVO extends CommonTxVO {
 	public void setHash(String hash) {
 		this.hash = hash;
 	}
-	public int getValue() {
+	public String getValue() {
 		return value;
 	}
-	public void setValue(int value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 }

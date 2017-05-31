@@ -8,6 +8,7 @@ public class BitcoinVO {
 	private String hash;
 	private int n_tx;
 	private ArrayList<TxVO> tx;
+	private int fee;
 	
 	public String getHash() {
 		return hash;
@@ -26,6 +27,12 @@ public class BitcoinVO {
 	}
 	public void setTx(ArrayList<TxVO> tx) {
 		this.tx = tx;
+	}
+	public int getFee() {
+		return fee;
+	}
+	public void setFee(int fee) {
+		this.fee = fee;
 	}
 	
 }

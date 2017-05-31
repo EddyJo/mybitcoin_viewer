@@ -3,9 +3,9 @@ package kr.co.bitcoinviewer.model;
 public class ResultVO {
 	private String hash;
 	private int nTx;
-	private int avgTxVal;
-	private int avgTxFee;
-	private int avgTxSize;
+	private double avgTxVal;
+	private double avgTxFee;
+	private double avgTxSize;
 	
 	public String getHash() {
 		return hash;
@@ -19,22 +19,22 @@ public class ResultVO {
 	public void setnTx(int nTx) {
 		this.nTx = nTx;
 	}
-	public int getAvgTxVal() {
+	public double getAvgTxVal() {
 		return avgTxVal;
 	}
-	public void setAvgTxVal(int avgTxVal) {
+	public void setAvgTxVal(double avgTxVal) {
 		this.avgTxVal = avgTxVal;
 	}
-	public int getAvgTxFee() {
+	public double getAvgTxFee() {
 		return avgTxFee;
 	}
-	public void setAvgTxFee(int avgTxFee) {
+	public void setAvgTxFee(double avgTxFee) {
 		this.avgTxFee = avgTxFee;
 	}
-	public int getAvgTxSize() {
+	public double getAvgTxSize() {
 		return avgTxSize;
 	}
-	public void setAvgTxSize(int avgTxSize) {
+	public void setAvgTxSize(double avgTxSize) {
 		this.avgTxSize = avgTxSize;
 	}
 	

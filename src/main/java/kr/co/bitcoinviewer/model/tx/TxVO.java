@@ -5,8 +5,8 @@ import java.util.ArrayList;
 public class TxVO {
 	private String hash;
 	private int size;
-	private ArrayList<CommonTxVO> inputs;
-	private ArrayList<CommonTxVO> out;
+	private ArrayList<InTxVO> inputs;
+	private ArrayList<OutTxVO> out;
 	
 	public String getHash() {
 		return hash;
@@ -20,16 +20,16 @@ public class TxVO {
 	public void setSize(int size) {
 		this.size = size;
 	}
-	public ArrayList<CommonTxVO> getInputs() {
+	public ArrayList<InTxVO> getInputs() {
 		return inputs;
 	}
-	public void setInputs(ArrayList<CommonTxVO> inputs) {
+	public void setInputs(ArrayList<InTxVO> inputs) {
 		this.inputs = inputs;
 	}
-	public ArrayList<CommonTxVO> getOut() {
+	public ArrayList<OutTxVO> getOut() {
 		return out;
 	}
-	public void setOut(ArrayList<CommonTxVO> out) {
+	public void setOut(ArrayList<OutTxVO> out) {
 		this.out = out;
 	}
 }
