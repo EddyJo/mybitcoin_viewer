@@ -5,3 +5,11 @@
 
 ### 1.클래스 다이어그램
 ![ClassDiagram](./img/cld.JPG)
+
+### 안녕
+
+```java
+public void main(String[] args) {
+
+}
+```
